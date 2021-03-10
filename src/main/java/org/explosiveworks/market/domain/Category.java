@@ -11,6 +11,15 @@ public class Category {
     public Category() {
     }
 
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", label='" + label + '\'' +
+                ", subCategories=" + subCategories +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

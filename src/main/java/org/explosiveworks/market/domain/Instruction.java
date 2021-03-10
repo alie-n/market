@@ -8,6 +8,14 @@ public class Instruction {
     public Instruction() {
     }
 
+    @Override
+    public String toString() {
+        return "Instruction{" +
+                "id=" + id +
+                ", description=" + description +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

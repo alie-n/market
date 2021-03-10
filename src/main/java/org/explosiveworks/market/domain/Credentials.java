@@ -9,6 +9,15 @@ public class Credentials {
     public Credentials() {
     }
 
+    @Override
+    public String toString() {
+        return "Credentials{" +
+                "id=" + id +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
