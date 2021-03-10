@@ -11,6 +11,7 @@ Description
 - java 8
 - junit
 - mockito
+- log4j
 - lombok
 - joda-time
 - maven

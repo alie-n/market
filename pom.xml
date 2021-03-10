@@ -13,6 +13,7 @@
         <junit>4.13.2</junit>
         <mockito-core>3.8.0</mockito-core>
         <joda-time>2.10.10</joda-time>
+        <log4j>2.14.0</log4j>
         <jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
     </properties>
 
@@ -44,6 +45,16 @@
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>${joda-time}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j}</version>
         </dependency>
     </dependencies>
 
