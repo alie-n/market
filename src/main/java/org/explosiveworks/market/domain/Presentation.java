@@ -9,6 +9,15 @@ public class Presentation {
     public Presentation() {
     }
 
+    @Override
+    public String toString() {
+        return "Presentation{" +
+                "id=" + id +
+                ", label='" + label + '\'' +
+                ", image=" + image +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

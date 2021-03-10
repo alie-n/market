@@ -1,14 +1,21 @@
 package org.explosiveworks.market.domain;
 
-import java.io.File;
-
 public class Image {
 
     private Long id;
-    private File small;
-    private File large;
+    private String small;
+    private String large;
 
     public Image() {
+    }
+
+    @Override
+    public String toString() {
+        return "Image{" +
+                "id=" + id +
+                ", small='" + small + '\'' +
+                ", large='" + large + '\'' +
+                '}';
     }
 
     public Long getId() {
@@ -19,19 +26,19 @@ public class Image {
         this.id = id;
     }
 
-    public File getSmall() {
+    public String getSmall() {
         return small;
     }
 
-    public void setSmall(File small) {
+    public void setSmall(String small) {
         this.small = small;
     }
 
-    public File getLarge() {
+    public String getLarge() {
         return large;
     }
 
-    public void setLarge(File large) {
+    public void setLarge(String large) {
         this.large = large;
     }
 }

@@ -12,6 +12,15 @@ public class Conflict {
     public Conflict() {
     }
 
+    @Override
+    public String toString() {
+        return "Conflict{" +
+                "id=" + id +
+                ", reason=" + reason +
+                ", intruder=" + intruder +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

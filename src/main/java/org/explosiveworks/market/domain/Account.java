@@ -6,6 +6,15 @@ public abstract class Account {
     private Credentials credentials;
     private Presentation presentation;
 
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", credentials=" + credentials +
+                ", presentation=" + presentation +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }

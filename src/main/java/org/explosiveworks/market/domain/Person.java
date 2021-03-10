@@ -11,6 +11,15 @@ public class Person extends Account {
     public Person() {
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "products=" + products +
+                ", cash=" + cash +
+                ", rating=" + rating +
+                '}';
+    }
+
     public List<Product> getProducts() {
         return products;
     }

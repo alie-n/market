@@ -2,7 +2,7 @@ package org.explosiveworks.market.domain;
 
 import org.explosiveworks.market.domain.enums.Phase;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Contract {
 
@@ -13,11 +13,27 @@ public class Contract {
     private int cash;
     private Phase phase;
     private Conflict conflict;
-    private Date begin;
-    private Date end;
-    private Date deadline;
+    private LocalDateTime begin;
+    private LocalDateTime end;
+    private LocalDateTime deadline;
 
     public Contract() {
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                "id=" + id +
+                ", dealer=" + dealer +
+                ", buyer=" + buyer +
+                ", instruction=" + instruction +
+                ", cash=" + cash +
+                ", phase=" + phase +
+                ", conflict=" + conflict +
+                ", begin=" + begin +
+                ", end=" + end +
+                ", deadline=" + deadline +
+                '}';
     }
 
     public Long getId() {
@@ -76,27 +92,27 @@ public class Contract {
         this.conflict = conflict;
     }
 
-    public Date getBegin() {
+    public LocalDateTime getBegin() {
         return begin;
     }
 
-    public void setBegin(Date begin) {
+    public void setBegin(LocalDateTime begin) {
         this.begin = begin;
     }
 
-    public Date getEnd() {
+    public LocalDateTime getEnd() {
         return end;
     }
 
-    public void setEnd(Date end) {
+    public void setEnd(LocalDateTime end) {
         this.end = end;
     }
 
-    public Date getDeadline() {
+    public LocalDateTime getDeadline() {
         return deadline;
     }
 
-    public void setDeadline(Date deadline) {
+    public void setDeadline(LocalDateTime deadline) {
         this.deadline = deadline;
     }
 }

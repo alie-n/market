@@ -11,6 +11,15 @@ public class Description {
     public Description() {
     }
 
+    @Override
+    public String toString() {
+        return "Description{" +
+                "id=" + id +
+                ", images=" + images +
+                ", text='" + text + '\'' +
+                '}';
+    }
+
     public Long getId() {
         return id;
     }
