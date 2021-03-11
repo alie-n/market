@@ -15,6 +15,7 @@
         <joda-time>2.10.10</joda-time>
         <log4j>2.14.0</log4j>
         <jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
+        <maven-javadoc-plugin>3.2.0</maven-javadoc-plugin>
     </properties>
 
     <repositories>
@@ -75,6 +76,19 @@
                         <phase>test</phase>
                         <goals>
                             <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-plugin}</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>javadoc</goal>
                         </goals>
                     </execution>
                 </executions>
