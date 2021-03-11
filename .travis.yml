@@ -13,4 +13,4 @@ after_success:
     - git config --global user.name "travis-ci"
     - git config --global user.email "travis@travis-ci.org"
 
-    - $HOME/market/update_docs.sh
+    - $HOME/market/scripts/update_docs.sh
