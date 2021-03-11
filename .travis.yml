@@ -12,7 +12,7 @@ after_success:
 
     #UPDATE JAVADOC
 
-    test TRAVIS_COMMIT_MESSAGE != "update javadoc"
+    test $TRAVIS_COMMIT_MESSAGE != "update javadoc"
 
     - git config --global user.name "travis-ci"
     - git config --global user.email "travis@travis-ci.org"
