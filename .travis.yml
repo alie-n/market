@@ -1,5 +1,30 @@
 language: java
 jdk: openjdk8
 
+env:
+  global:
+    secure: cq0XB2pFFvGUgm7cGzUEmv6P9cTlG7bcIwnT9PHithF8rqQKsv4LrGOX1Yhqvo/sVUNOs+tJCOHrGyp1jtzVfjl/E6vYsV+1Ul1dOGwqqb9tv5H0uOC/lt7zjZ5J2uNO55PALsNSdbpuCkIqFeHpBchZYlC1gGrD1VJ/PFsAMfGVCaVEuQv91cQU8Z9QhPFlA8Yv5/sH4L057ZAbb8kc2ZpDJaf+7y/Jaut4Sqhhl9ZDZgsPsdvKcllqeK74BErsEAl+MG0P4Wz8Lhk2xR8tK+7HG6jeNEUsJAbBpUgm/axfT1Y8MIh1ApuLlKonGnNcZSGoELvC+pzzMntS1KCxAp/zPyAAIyCZ9tBOlqBbxAYh20/g3s7+q9C39uIuGK4CdRpo3o0uAYbd+TkK2gwGNuTcOQZ8eiou1EKlyv/0Fj/fa5F6y/Kj4Iyo5NpWZ/QYig4eOyPe4/GdudmxElKYi01yL60YDhOYAbXTQjUsxb3/axZtsopV5CKVPeKZ3NY610dfJA82bb4Ayr1VU1x6O89zByMZprYxXgkGPTiHHTWX36dAS5d9t1nA4IUZa64tziFgz5T3TtZ+yIfQ4WiS/qepHQOITKxkVALuXC47uHov5EQvm8W4vBTElAjfNUeYOToOlYNySsnB6UQyw+0qWdmDmec6QR9VznQNxZOr2ZQ=
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+    - bash <(curl -s https://codecov.io/bash)
+
+    #UPDATE JAVADOC
+
+    - curl -u travis-ci:$GITHUB_TOKEN https://api.github.com/user
+
+    - git config --global user.name "travis-ci"
+    - git config --global user.email "travis@travis-ci.org"
+
+    - cd $HOME
+
+    - git clone --quiet --branch=master https://github.com/alie-n/market.git market
+    - rm -r $HOME/market/docs/apidocs
+    - cp -r $HOME/build/alie-n/market/target/site/apidocs $HOME/market/docs/
+
+    - cd $HOME/market
+
+    - git add .
+    - git commit -m "update javadoc. build $TRAVIS_BUILD_NUMBER"
+    - git push https://github.com/alie-n/market master
+
+    - rm -rf $HOME/market
