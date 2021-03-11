@@ -12,22 +12,25 @@ after_success:
 
     #UPDATE JAVADOC
 
-    test $TRAVIS_COMMIT_MESSAGE != "update javadoc"
+    - |
+        if [[ $TRAVIS_COMMIT_MESSAGE != "update javadoc" ]]; then
 
-    - git config --global user.name "travis-ci"
-    - git config --global user.email "travis@travis-ci.org"
+            - git config --global user.name "travis-ci"
+            - git config --global user.email "travis@travis-ci.org"
 
-    - cd $HOME
+            - cd $HOME
 
-    - git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/alie-n/market.git market
+            - git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/alie-n/market.git market
 
-    - rm -r $HOME/market/docs/apidocs
-    - cp -r $HOME/build/alie-n/market/target/site/apidocs $HOME/market/docs/
+            - rm -r $HOME/market/docs/apidocs
+            - cp -r $HOME/build/alie-n/market/target/site/apidocs $HOME/market/docs/
 
-    - cd $HOME/market
+            - cd $HOME/market
 
-    - git add .
-    - git commit -m "update javadoc"
-    - git push https://$GITHUB_TOKEN@github.com/alie-n/market master
+            - git add .
+            - git commit -m "update javadoc"
+            - git push https://$GITHUB_TOKEN@github.com/alie-n/market master
 
-    - rm -rf $HOME/market
+            - rm -rf $HOME/market
+
+        fi
