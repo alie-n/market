@@ -1,5 +1,8 @@
 package org.explosiveworks.market.domain;
 
+/**
+ * Draft
+ */
 public class Image {
 
     private Long id;
