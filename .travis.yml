@@ -10,14 +10,12 @@ after_success:
 
     #UPDATE JAVADOC
 
-    - curl -u travis-ci:$GITHUB_TOKEN https://api.github.com/user
-
     - git config --global user.name "travis-ci"
     - git config --global user.email "travis@travis-ci.org"
 
     - cd $HOME
 
-    - git clone --quiet --branch=master https://github.com/alie-n/market.git market
+    - git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/alie-n/market.git market
     - rm -r $HOME/market/docs/apidocs
     - cp -r $HOME/build/alie-n/market/target/site/apidocs $HOME/market/docs/
 
@@ -25,6 +23,6 @@ after_success:
 
     - git add .
     - git commit -m "update javadoc. build $TRAVIS_BUILD_NUMBER"
-    - git push https://github.com/alie-n/market master
+    - git push https://$GITHUB_TOKEN@github.com/alie-n/market master
 
     - rm -rf $HOME/market
