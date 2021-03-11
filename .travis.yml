@@ -13,4 +13,10 @@ after_success:
     - git config --global user.name "travis-ci"
     - git config --global user.email "travis@travis-ci.org"
 
+    - cd $HOME
+
+    - git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/alie-n/market.git market
+
     - $HOME/market/scripts/update_docs.sh
+
+    - rm -rf $HOME/market
