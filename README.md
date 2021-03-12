@@ -3,13 +3,16 @@
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/ali-n/market/blob/master/LICENCE)
 [![Join the chat at https://gitter.im/alie-n/market](https://badges.gitter.im/alie-n/market.svg)](https://gitter.im/alie-n/market?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Market
+## Marketplace
 
-Description
+Description. #FR #FS
+
+#### Application
+[App](https://xmarketplace.herokuapp.com/)
 
 #### Documentation
-
-[API Docs](https://alie-n.github.io/market/apidocs/index.html)
+- [Wiki](https://alie-n.github.io/market)
+- [Javadoc](https://alie-n.github.io/market/apidocs/index.html)
 
 #### Tech stack
 - java 8
@@ -20,3 +23,8 @@ Description
 - joda-time
 - maven
 - jacoco
+
+#### Infrastructure
+- Travis CI
+- Heroku
+- Codecov
