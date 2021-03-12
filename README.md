@@ -7,10 +7,8 @@
 
 Description. #FR #FS
 
-#### Application
-[App](https://xmarketplace.herokuapp.com/)
-
-#### Documentation
+#### Links
+- [App](https://xmarketplace.herokuapp.com/)
 - [Wiki](https://alie-n.github.io/market)
 - [Javadoc](https://alie-n.github.io/market/apidocs/index.html)
 
