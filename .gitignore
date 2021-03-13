@@ -1,4 +1,7 @@
 .idea/*
-target/*
-
 *.iml
+
+target/*
+out/*
+
+docs/apidocs/*
