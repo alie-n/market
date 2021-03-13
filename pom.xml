@@ -15,8 +15,11 @@
         <mockito-core>3.8.0</mockito-core>
         <joda-time>2.10.10</joda-time>
         <log4j>2.14.0</log4j>
+        <webapp-runner>8.5.61.0</webapp-runner>
+
         <jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
         <maven-javadoc-plugin>3.2.0</maven-javadoc-plugin>
+        <maven-dependency-plugin>3.1.2</maven-dependency-plugin>
     </properties>
 
     <repositories>
@@ -58,6 +61,12 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j}</version>
         </dependency>
+        <dependency>
+            <groupId>com.heroku</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>${webapp-runner}</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -77,6 +86,27 @@
                         </resource>
                     </webResources>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>${maven-dependency-plugin}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals><goal>copy</goal></goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.heroku</groupId>
+                                    <artifactId>webapp-runner</artifactId>
+                                    <version>${webapp-runner}</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
