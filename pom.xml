@@ -10,13 +10,14 @@
     <packaging>war</packaging>
 
     <properties>
+        <javax.servlet-api>3.1.0</javax.servlet-api>
         <lombok>1.18.16</lombok>
         <junit>4.13.2</junit>
         <mockito-core>3.8.0</mockito-core>
         <joda-time>2.10.10</joda-time>
         <log4j>2.14.0</log4j>
-        <webapp-runner>8.5.61.0</webapp-runner>
 
+        <webapp-runner>8.5.61.0</webapp-runner>
         <jacoco-maven-plugin>0.8.6</jacoco-maven-plugin>
         <maven-javadoc-plugin>3.2.0</maven-javadoc-plugin>
         <maven-dependency-plugin>3.1.2</maven-dependency-plugin>
@@ -30,6 +31,11 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
