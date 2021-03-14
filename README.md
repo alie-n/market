@@ -28,4 +28,4 @@ Description. #FR #FS
 - Travis CI
 - Heroku
 - Codecov
-- Telegram (t.me/travis_pro_bot)
+- Telegram (https://t.me/travis_pro, https://t.me/travis_pro_bot)
