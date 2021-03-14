@@ -4,6 +4,15 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <servlet>
+        <servlet-name>DraftServlet</servlet-name>
+        <servlet-class>org.explosiveworks.market.servlet.DraftServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DraftServlet</servlet-name>
+        <url-pattern>/draftServlet</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
