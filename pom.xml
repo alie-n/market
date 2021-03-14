@@ -11,6 +11,8 @@
 
     <properties>
         <javax.servlet-api>3.1.0</javax.servlet-api>
+        <postgresql>42.2.1</postgresql>
+        <h2>1.4.200</h2>
         <lombok>1.18.16</lombok>
         <junit>4.13.2</junit>
         <mockito-core>3.8.0</mockito-core>
@@ -36,6 +38,17 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api}</version>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
