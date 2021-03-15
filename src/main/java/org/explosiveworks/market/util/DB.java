@@ -7,19 +7,12 @@ public class DB {
 
     public static String getValue() throws URISyntaxException, SQLException, ClassNotFoundException {
 
-        String driverClassName = "org.h2.Driver";
-        String url = "jdbc:h2:./market";
-        String username ="root";
-        String password ="root";
+        String url = System.getenv("DB_URL");
+        String driverClassName = "org.postgresql.Driver";
 
         Class.forName(driverClassName);
-
-        Connection connection = DriverManager.getConnection(url, username, password);
+        Connection connection = DriverManager.getConnection(url);
         Statement statement = connection.createStatement();
-
-        statement.execute("DROP TABLE IF EXISTS draft;");
-        statement.execute("CREATE TABLE draft (id INT, value VARCHAR(20));");
-        statement.execute("INSERT INTO draft (id, value) VALUES (1, 'draft value');");
 
         ResultSet resultSet = statement.executeQuery("SELECT * FROM draft");
 
