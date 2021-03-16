@@ -25,7 +25,7 @@ Description. #FR #FS
 - jacoco
 
 #### Infrastructure
-- Travis CI
+- Travis CI (https://travis-ci.org/github/alie-n/market)
 - Heroku
-- Codecov
+- Codecov (https://app.codecov.io/gh/alie-n/market)
 - Telegram (https://t.me/travis_pro, https://t.me/travis_pro_bot)
