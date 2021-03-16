@@ -23,4 +23,5 @@ after_success:
 
     #UPDATE JAVADOC
 
-    - chmod u+x bash scripts/javadocs.sh
+    - chmod u+x $HOME/build/alie-n/market/scripts/javadocs.sh
+    - bash $HOME/build/alie-n/market/scripts/javadocs.sh
