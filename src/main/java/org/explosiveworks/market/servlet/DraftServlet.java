@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class DraftServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest request,
+    protected void doGet(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException, IOException {
 
