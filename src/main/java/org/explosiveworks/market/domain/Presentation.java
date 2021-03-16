@@ -4,7 +4,7 @@ public class Presentation {
 
     private Long id;
     private String label;
-    private Image image;
+    private String image;
 
     public Presentation() {
     }
@@ -34,11 +34,11 @@ public class Presentation {
         this.label = label;
     }
 
-    public Image getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(Image image) {
+    public void setImage(String image) {
         this.image = image;
     }
 }
