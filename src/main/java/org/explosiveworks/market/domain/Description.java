@@ -5,7 +5,7 @@ import java.util.List;
 public class Description {
 
     private Long id;
-    private List<Image> images;
+    private List<String> images;
     private String text;
 
     public Description() {
@@ -28,11 +28,11 @@ public class Description {
         this.id = id;
     }
 
-    public List<Image> getImages() {
+    public List<String> getImages() {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImages(List<String> images) {
         this.images = images;
     }
 
