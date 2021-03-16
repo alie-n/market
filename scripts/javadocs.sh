@@ -14,7 +14,7 @@ if [[ $TRAVIS_COMMIT_MESSAGE != "update javadoc" ]]; then
 
     cd $HOME/market
 
-    git add .
+    git add -A
     git commit -m "update javadoc"
     git push https://$GITHUB_TOKEN@github.com/alie-n/market master
 
