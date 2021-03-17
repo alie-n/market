@@ -16,11 +16,16 @@ deploy:
 
 addons:
   sonarcloud:
-    organization: alie-n
+    organization: "alie-n"
     token:
-      secure: 0RKOtENnOn74EheCa4IOMfCac+/pfdKQZEEzhB0XF2pV1/srBbifFivSV2bpPq67Z7Oh9wyosVyZcAJeq4IT1vkmU7vyFC27rQ84rfm032oD+B81hPxA73XFQVSxAWXMZV1ypR2ppVA5eJG1aH3V/UNLopaT//NsUrV6mPabSsiFG9tEDQeA1wSupjXYnSpnVoGVT84OpAJ+LQi5RSQnJskC57uc6y4UvtWgtrfMzxCSFYwZGTAJjFjWpLgCO+rHW5pzbUH35MjKw80RFpQMfG2nTwcazmx5FBPFJ0AoPlJ7SvJmbssVGsIivW8X5hm229ytH98n+gmm/OWVDARU7pF/H3JfExJIID6ljwbtY9bHVVkVD3BLTRIN23rRPKpekxAAT9KVOW2hsNyetFnfh3q5Ti7voM2MBWeNdxa7XLLIg2XSiS+3gwybEMZ/QcCbPlrI83hKF6W4/j8aAcupIdOC69yrI4R9qZwvjiueU/h8r0xBvI/hyFbZ6uuDzuz0/R2N5J3ddouLIb/jpNWsE05u+JEkGbawyWffAs3Uao3HFy5OscyEiQ8P0eHD6Z7KGpHUa8PBSQI+zJVbXsxYK4Ias/hnyZXBYEHIAubsvwU15t5iOMTo4Oj02XX0Yxjll1uMyvH+0sshOxjY83qkhVa4E3D60vEMysFj8gZ9T+E=
+      secure: "0RKOtENnOn74EheCa4IOMfCac+/pfdKQZEEzhB0XF2pV1/srBbifFivSV2bpPq67Z7Oh9wyosVyZcAJeq4IT1vkmU7vyFC27rQ84rfm032oD+B81hPxA73XFQVSxAWXMZV1ypR2ppVA5eJG1aH3V/UNLopaT//NsUrV6mPabSsiFG9tEDQeA1wSupjXYnSpnVoGVT84OpAJ+LQi5RSQnJskC57uc6y4UvtWgtrfMzxCSFYwZGTAJjFjWpLgCO+rHW5pzbUH35MjKw80RFpQMfG2nTwcazmx5FBPFJ0AoPlJ7SvJmbssVGsIivW8X5hm229ytH98n+gmm/OWVDARU7pF/H3JfExJIID6ljwbtY9bHVVkVD3BLTRIN23rRPKpekxAAT9KVOW2hsNyetFnfh3q5Ti7voM2MBWeNdxa7XLLIg2XSiS+3gwybEMZ/QcCbPlrI83hKF6W4/j8aAcupIdOC69yrI4R9qZwvjiueU/h8r0xBvI/hyFbZ6uuDzuz0/R2N5J3ddouLIb/jpNWsE05u+JEkGbawyWffAs3Uao3HFy5OscyEiQ8P0eHD6Z7KGpHUa8PBSQI+zJVbXsxYK4Ias/hnyZXBYEHIAubsvwU15t5iOMTo4Oj02XX0Yxjll1uMyvH+0sshOxjY83qkhVa4E3D60vEMysFj8gZ9T+E="
 script:
     - mvn clean verify sonar:sonar -Pcoverage -X
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
