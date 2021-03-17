@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.explosiveworks.market.domain"},{"l":"org.explosiveworks.market.domain.enums"},{"l":"org.explosiveworks.market.servlet"},{"l":"org.explosiveworks.market.util"}]
