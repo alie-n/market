@@ -6,28 +6,20 @@
 
 ## Marketplace
 
-Description. #FR #FS
-
-#### Application
-[App](https://xmarketplace.herokuapp.com/)
-
-#### Documentation
-- [Wiki](https://alie-n.github.io/market)
-- [Javadoc](https://alie-n.github.io/market/apidocs/index.html)
+Some description #FR #FS
 
 #### Tech stack
-- java 8
-- junit
-- mockito
-- log4j
-- lombok
-- joda-time
-- maven
-- jacoco
+- Java 8
+- Junit
+- Maven
 
+#### Documentation
+- Javadoc (https://alie-n.github.io/market/apidocs/index.html)
 #### Infrastructure
 - Travis CI (https://travis-ci.org/github/alie-n/market)
-- Heroku
+- Heroku (https://xmarketplace.herokuapp.com)
 - SonarCloud (https://sonarcloud.io/dashboard?id=org.explosiveworks:market)
 - Codecov (https://app.codecov.io/gh/alie-n/market)
 - Telegram (https://t.me/travis_pro, https://t.me/travis_pro_bot)
+
+![](https://raw.githubusercontent.com/alie-n/market/master/.github/images/infrastructure.jpg)
