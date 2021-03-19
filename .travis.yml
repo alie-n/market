@@ -2,38 +2,3 @@ os: linux
 dist: xenial
 language: java
 jdk: openjdk11
-
-env:
-  global:
-    - secure: cq0XB2pFFvGUgm7cGzUEmv6P9cTlG7bcIwnT9PHithF8rqQKsv4LrGOX1Yhqvo/sVUNOs+tJCOHrGyp1jtzVfjl/E6vYsV+1Ul1dOGwqqb9tv5H0uOC/lt7zjZ5J2uNO55PALsNSdbpuCkIqFeHpBchZYlC1gGrD1VJ/PFsAMfGVCaVEuQv91cQU8Z9QhPFlA8Yv5/sH4L057ZAbb8kc2ZpDJaf+7y/Jaut4Sqhhl9ZDZgsPsdvKcllqeK74BErsEAl+MG0P4Wz8Lhk2xR8tK+7HG6jeNEUsJAbBpUgm/axfT1Y8MIh1ApuLlKonGnNcZSGoELvC+pzzMntS1KCxAp/zPyAAIyCZ9tBOlqBbxAYh20/g3s7+q9C39uIuGK4CdRpo3o0uAYbd+TkK2gwGNuTcOQZ8eiou1EKlyv/0Fj/fa5F6y/Kj4Iyo5NpWZ/QYig4eOyPe4/GdudmxElKYi01yL60YDhOYAbXTQjUsxb3/axZtsopV5CKVPeKZ3NY610dfJA82bb4Ayr1VU1x6O89zByMZprYxXgkGPTiHHTWX36dAS5d9t1nA4IUZa64tziFgz5T3TtZ+yIfQ4WiS/qepHQOITKxkVALuXC47uHov5EQvm8W4vBTElAjfNUeYOToOlYNySsnB6UQyw+0qWdmDmec6QR9VznQNxZOr2ZQ=
-    - secure: wPcPnW6SAHU0thUPtYj8SRpyrIZSgCqqc4Vp7L9qZbEObnUqL8A9Hyagk2/O6uvajZR0HV+fl2p5rTX6PbS2xcEAx4YexuUjp/630ZJDsycmxxNHXElX1eyfmpZb4mIB9gGPhriACvAk+eBrsVdX2H8TGOnORNOzwtCy13feDKoGNn5eb5KG/S6U5DnQmGJaQCh8D7+8zjxmGz93o42WNW9WUeXKHfRO/TImWQDgKloFBXKdLJNSA11FXRVIm0yRp9PMb+alKHh7d3cAOgtNAk2qK7a+Y2xPK2uijdxRgyyfByGASJ7f6XIqjtL7C9Qpz0KNXjKlZB3mkb4Zdm8pXtki89QtlCebfzYD3mMerS60pInIgblWG2ymWcQLiyi/xbo7xMLco/bai/9EKSsSE0GaHzJ3Azv0OVf5zvCpHF5/8rWaj3G2LRQXe4EFEDQUBe1HFWpPxflgrUYJQgN/g74RteOO0KR9ShjVcofbEeztShrTLUvl31HnQvhwYyWEb7+3RaZshHCV/THHddK2/Q+mR1T5Xz8oEDS56u5tL0xZHePmiEqKQxpTMRhpz+9gFXEaBYbO0bt1JEsSTUBnJHeahi+X1o9PfWLkVe+yeljB/sc9vYhrkTBNKR8OQBxICoc8rkz8HP23GcJpGvlxZNDBiTNBWBNPpI5B7913W1g=
-
-deploy:
-  provider: heroku
-  app: xmarketplace
-  api_key:
-    secure: Di4Uk4qMeVyCaMPtpwCpjRojg+ZHCUC5vA/MUIzZx083ds/Lv3OVeAqVTWARtIgBERz62e6S7NY6BrPF6L0ZXTQ1RST6Aq+92NQHcWhbzpU7Jy0xO7S8i0dwrlxfYlgbD/UG1nRxJoCQbqcHFZFl9/L5gntDNsk8bAWfamrm0z1AoIVQwCfL6ZE4y8fi7pwQczNaJprQ9Ra9U15pjr7LIvlY3Tq9UuqRyepakf/k2qJswezJrh/9ijUCjKrqrUbKQphShKjfbObci9DAid6Xcr5xF40oIwVxsII4/at7mjyX05CTgEZKyXzFtLlHcB4u9yNlR+dH046/95kWOJux4COoS0pQiZPQ/GRXACDJwWkSkJ1Gpr7OO1KJaIFtPbbGPPa+0kTZXe4oA0jrPV4QlANjISaR4njPLy1b9KCsIS7RPZQczT6QFGcAaxiG20uYufenwb8OoVJS4Wj01G18hhfI9Hm4iDdEyqz32W6d6yl3k6i79H64PGxsCtFq4ukcQEXfk/r8FmV96viZAb/eKpPtNw9/ILCWxC6zwoI/RprbnMf12kgNOnOi/6LZOebSkSmfUDHI1CHvmi2yGPFFY5LRbsGIijYxcTat1hRmRxB/M/w1/ycb+n39j29jH+Sw3lLISsrw4Hv0DBBjGcnUqnc8JpUjcfgGofazosceYb0=
-
-addons:
-  sonarcloud:
-    organization: "alie-n"
-    token:
-      secure: "F30jwxGpg8fDwPdYbRsONxdcIbn5zAhNHQJS5RgF4H9v+SM6eIDK+VejOEFRavPcR6J2gO8pX2JglBFJB4kMUIdcmguGpuwJSvRqEeewkKadbhOpqrk6JAUQlXddmgi0ACe444/y7+au2o89TYcnhQ3HDbEgwLe0tCR1ZLsQiwYWgF9A/QGS8ahqSREuZiiyA7L5hb/86tKHpzIssXmUv+WIOaPY0nUqnT5FcGWjjORQxlrr6PBl/Yj3adYdmqIJqqToWHB2c5PiQ6wlusZbsPuAii3WD+lSdqWcjWyKbi7aseakV+wyvMH5LivWF3rMRqxb491e91Od0j7wZr6ZjoZvkz83xsWaU3c/qXFeSbjN1Bx3PF25vAhtglyigbmRS4cQ58PExwNIGfdylpOI/RXZ0GvrLOaGcCaRDE5rNBFgt631wvwHWFgWni+xcVht5tqcxBv8kF4kaKu3VTOkEtkmJN3chefblT8wQIygiph6E5qnCGFvR9V7y7at/vxStVFYg/oZ6pHGcNP0h0EW9FinhQF4PX5da4z+Hde0vJWgd0ynprHmONeIC//EeQbrz1QlWqKKgbWDvzfm7tub95s5usnsqZdOpVoJPCVuwt0sWD77oEYdmQC4KXtMvZK+nl0dDIj1mk+WSbW3eJI36b6HoLuFfrVySG7gipGHwpk="
-script:
-    - mvn clean verify sonar:sonar -Pcoverage -X
-
-cache:
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.sonar/cache'
-
-after_success:
-
-    #TELEGRAM NOTIFICATION
-
-    - curl -d "chat_id=@travis_pro&text=build $TRAVIS_BUILD_NUMBER passed. %0A$TRAVIS_COMMIT_MESSAGE" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
-
-    #UPDATE JAVADOC
-
-    - chmod u+x $HOME/build/alie-n/market/scripts/javadocs.sh
-    - bash $HOME/build/alie-n/market/scripts/javadocs.sh
