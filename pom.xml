@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.explosiveworks</groupId>
-    <artifactId>market</artifactId>
+    <artifactId>marketplace</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
