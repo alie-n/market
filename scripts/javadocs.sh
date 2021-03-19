@@ -12,7 +12,7 @@ if [[ $TRAVIS_COMMIT_MESSAGE != "update javadoc" ]]; then
     rm -r $HOME/marketplace/docs/apidocs
     cp -r $HOME/build/xxcw/marketplace/target/site/apidocs $HOME/marketplace/docs/
 
-    cd $HOME/market
+    cd $HOME/marketplace
 
     git add -f .
     git commit -m "update javadoc"
