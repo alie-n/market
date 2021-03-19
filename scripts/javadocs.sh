@@ -7,17 +7,17 @@ if [[ $TRAVIS_COMMIT_MESSAGE != "update javadoc" ]]; then
 
     cd $HOME
 
-    git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/alie-n/market.git market
+    git clone --quiet --branch=master https://$GITHUB_TOKEN@github.com/xxcw/marketplace.git marketplace
 
-    rm -r $HOME/market/docs/apidocs
-    cp -r $HOME/build/alie-n/market/target/site/apidocs $HOME/market/docs/
+    rm -r $HOME/marketplace/docs/apidocs
+    cp -r $HOME/build/xxcw/marketplace/target/site/apidocs $HOME/marketplace/docs/
 
     cd $HOME/market
 
     git add -f .
     git commit -m "update javadoc"
-    git push -fq https://$GITHUB_TOKEN@github.com/alie-n/market master
+    git push -fq https://$GITHUB_TOKEN@github.com/xxcw/marketplace master
 
-    rm -rf $HOME/market
+    rm -rf $HOME/marketplace
 
 fi
