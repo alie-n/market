@@ -38,7 +38,7 @@ after_success:
 
     #TELEGRAM NOTIFICATION
 
-    - curl -d "chat_id=@travis_pro&text=build $TRAVIS_BUILD_NUMBER passed. %0A$TRAVIS_COMMIT_MESSAGE" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
+    - curl -d "chat_id=@travis_server_reports&text=build $TRAVIS_BUILD_NUMBER passed. %0A$TRAVIS_COMMIT_MESSAGE" -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
 
     #UPDATE JAVADOC REPORT
 

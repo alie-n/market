@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/xxcw/marketplace.svg?branch=master)](https://travis-ci.org/xxcw/marketplace)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.explosiveworks%3Amarketplace&metric=coverage)](https://sonarcloud.io/dashboard?id=org.explosiveworks%3Amarketplace)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/ali-n/marketplace/blob/master/LICENCE)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xxcw/marketplace/blob/master/LICENCE)
 [![Join the chat at https://gitter.im/xxcw/marketplace](https://badges.gitter.im/xxcw/marketplace.svg)](https://gitter.im/xxcw/marketplace?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Marketplace
@@ -18,6 +18,6 @@ Some description #FR #FS
 - Travis CI (https://travis-ci.org/github/xxcw/marketplace)
 - Heroku (https://marketplace-main.herokuapp.com)
 - SonarCloud (https://sonarcloud.io/dashboard?id=org.explosiveworks:marketplace)
-- Telegram (https://t.me/travis_pro, https://t.me/travis_pro_bot)
+- Telegram (https://t.me/travis_server_reports, https://t.me/travis_pro_bot)
 
 ![](https://raw.githubusercontent.com/xxcw/marketplace/master/.github/images/infrastructure.jpg)
