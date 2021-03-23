@@ -5,7 +5,7 @@
 
 ## Marketplace
 
-Some description #FR #FS
+Functionality: get http request and send response with data from db.
 
 #### Tech stack
 - Java 8
